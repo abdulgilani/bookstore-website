@@ -294,14 +294,14 @@
         //ATTACH YOUR OWN FIREBASE CONFIG
 
         const firebaseConfig = {
-            apiKey: "AIzaSyAF_mj8S8EeM8cAv5zsq0iklFC6XhjSF_s",
-            authDomain: "bookstore-51911.firebaseapp.com",
-            databaseURL: "https://bookstore-51911-default-rtdb.firebaseio.com",
-            projectId: "bookstore-51911",
-            storageBucket: "bookstore-51911.appspot.com",
-            messagingSenderId: "770686101848",
-            appId: "1:770686101848:web:f22f780f07f6280b759d2d",
-            measurementId: "G-Z0RKJXYL41"
+            apiKey: process.env.API_KEY,
+            authDomain: process.env.AUTH_DOMAIN,
+            databaseURL: process.env.DATABASE_URL,
+            projectId: process.env.PROJECT_ID,
+            storageBucket: process.env.STORAGE_BUCKET,
+            messagingSenderId: process.env.MESSAGING_SENDER_ID,
+            appId: process.env.APP_ID,
+            measurementId: process.env.MEASUREMENT_ID
         };
 
         // Initialize Firebase
